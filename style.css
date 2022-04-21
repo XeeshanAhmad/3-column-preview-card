@@ -1,0 +1,112 @@
+:root{
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  margin-bottom: 1.5rem;
+  height: 2rem;
+}
+
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+  color: var(--Very-light-gray);
+  text-align: left;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+p{
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--Transparent-white);
+  margin-bottom: 2rem;
+  padding-right: 1.43rem;
+  line-height: 1.6rem;
+}
+
+button{
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: var(--Very-light-gray);
+  border: none;
+  border-radius: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: inherit;
+  color: var(--Transparent-white);
+  border: 2px solid white;
+  margin-bottom: 0.2rem;
+}
+
+.container{
+  margin: 3rem 1rem;
+}
+
+.first-card{
+  background-color: var(--Bright-orange);
+  border-radius: 8px 8px 0 0;
+  padding: 2.5rem;
+}
+
+.second-card{
+  background-color: var(--Dark-cyan);
+  padding: 2.5rem;
+}
+
+.third-card{
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 0 8px 8px;
+  padding: 2.5rem;
+}
+
+.first-button{
+  color: var(--Bright-orange);
+}
+
+.second-button{
+  color: var(--Dark-cyan);
+}
+
+.third-button{
+  color: var(--Very-dark-cyan);
+}
+
+.attribution {margin-top: 2rem; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 770px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    padding: 0 11rem;
+  }
+
+  .first-card{
+    border-radius: 8px 0 0 8px;
+  }
+
+  .third-card{
+    border-radius: 0 8px 8px 0;
+  }
+}
